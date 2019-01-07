@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+</head>
+<script>
+    document.onclick=function(ev){
+    var oEvent=ev||event;
+    var x=document.getElementsByTagName("body");
+    var div=document.createElement("div");
+    div.style.position="absolute";
+    div.style.left=oEvent.clientX+"px";
+    div.style.top=oEvent.clientY+"px";
+    div.style.fontsize=20+"px";
+    div.innerText="点击显示我";
+    x[0].appendChild(div);
+    }
+</script>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css" media="screen">
+        #b1{
+            background-color:green;
+        }
+        #b2{
+            background-color:red;
+        }
+        #b3{
+            background-color:blue;
+        }
+        #bb{
+        }
+    </style>
+    <script type="text/javascript">
+         function changeColor(c)
+         {
+            var x=document.getElementById("bb");
+            x.style.background=c;
+            x.style.color='pink';
+         }
+         function changeFontSize(b)
+         {
+            var x=document.getElementById("word");
+            x.style.fontSize=b+'px';
+         }
+    </script>
+</head>
+<body id="bb">
+<h1>
+    淮阴师范学院
+</h1>
+<hr>
+<p id="word">青春明媚，正如夏花绚烂，穿梭在斑驳阳光里的她，微微一笑，“娜”般灵动。尼采说：“每一个不曾起舞的日子，都是对生命的辜负。”而她认为，如果要起舞，就要带着饱满的激情，演绎最完美的舞姿。青春壮丽如诗，实干苦干以成。如果人生是一本书，那么大学的时光对唐娜来说便是这本书中最绚丽的篇章；如果人生是一条路，那么唐娜在这条路上不忘初心，只顾风雨兼程。</p>
+<input id="b1" type="button" name="" onclick="changeColor('green')">
+<input id="b2" type="button" name="" onclick="changeColor('red')">
+<input id="b3" type="button" name="" onclick="changeColor('blue')">
+<br/>
+<a href="javascript:changeFontSize(28)">大</a>
+<a href="javascript:changeFontSize(18)">中</a>
+<a href="javascript:changeFontSize(8)">小</a>
+</body>
+</html>
